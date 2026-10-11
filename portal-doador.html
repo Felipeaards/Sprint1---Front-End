@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Protótipo do Portal do Doador do Hub TdB.">
+    <title>Portal do Doador | Hub TdB</title>
+    <link rel="icon" type="image/svg+xml" href="imagens/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO (igual em todas as páginas) -->
+    <header class="cabecalho">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <img src="imagens/logo.svg" alt="Logo do Hub TdB" width="48" height="48">
+                Hub TdB
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="portal-doador.html" class="ativo" aria-current="page">Doador</a></li>
+                    <li><a href="portal-voluntario.html">Voluntário</a></li>
+                    <li><a href="integrantes.html">Quem Somos</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (muda em cada página) -->
+    <main>
+        <!-- Título da página -->
+        <section class="topo-pagina">
+            <div class="container">
+                <h1>Portal do Doador</h1>
+                <p>Para pessoas e empresas que querem ajudar e ver o resultado da sua doação.</p>
+            </div>
+        </section>
+
+        <!-- Problema -->
+        <section>
+            <div class="container">
+                <h2>O problema</h2>
+                <p>Hoje o doador não consegue ver o que aconteceu com o tratamento que ajudou a pagar.
+                    Sem ver o resultado, ele tem menos motivos para continuar doando.</p>
+            </div>
+        </section>
+
+        <!-- Como funciona -->
+        <section class="secao-branca">
+            <div class="container">
+                <h2>Como funciona</h2>
+                <ol>
+                    <li><strong>Entrar:</strong> o doador acessa o portal com seu login.</li>
+                    <li><strong>Acompanhar:</strong> vê o andamento do tratamento dos beneficiários que apadrinha.</li>
+                    <li><strong>Doar:</strong> escolhe um valor e é levado à plataforma Doare para concluir a doação.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Protótipo (telas de exemplo com dados fictícios) -->
+        <section>
+            <div class="container">
+                <h2>Protótipo do portal</h2>
+                <p>Telas de exemplo com dados fictícios.</p>
+
+                <h3>Meus apadrinhados</h3>
+                <table class="tabela">
+                    <caption>Beneficiários apadrinhados</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Beneficiário</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Progresso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lucas M.</td>
+                            <td>Em tratamento</td>
+                            <td><progress value="60" max="100">60%</progress> 60%</td>
+                        </tr>
+                        <tr>
+                            <td>Ana Clara S.</td>
+                            <td>Concluído</td>
+                            <td><progress value="100" max="100">100%</progress> 100%</td>
+                        </tr>
+                        <tr>
+                            <td>Pedro H.</td>
+                            <td>Em avaliação</td>
+                            <td><progress value="15" max="100">15%</progress> 15%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Fazer uma doação</h3>
+                <form class="formulario" action="#" method="post">
+                    <fieldset>
+                        <legend>Escolha o valor</legend>
+                        <label class="opcao"><input type="radio" name="valor" value="30"> R$ 30</label>
+                        <label class="opcao"><input type="radio" name="valor" value="50" checked> R$ 50</label>
+                        <label class="opcao"><input type="radio" name="valor" value="100"> R$ 100</label>
+                    </fieldset>
+                    <button class="botao botao-primario" type="button">Ir para a Doare</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ (igual em todas as páginas) -->
+    <footer class="rodape">
+        <div class="container">
+            <p><strong>Hub TdB</strong> - Proposta de plataforma para a Turma do Bem</p>
+            <p>Contato: <a href="mailto:contato@hubtdb.exemplo.br">contato@hubtdb.exemplo.br</a></p>
+            <p><small>Projeto acadêmico - Front-End Design Engineering - Sprint 01</small></p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
