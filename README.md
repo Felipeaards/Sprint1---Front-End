@@ -50,4 +50,4 @@ tdb-simples/
 
 ## Contato
 
-E-mail: `contato@hubtdb.exemplo.br`
+E-mail: `contato@hubtdb.com.br`
