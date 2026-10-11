@@ -50,9 +50,9 @@ tdb-simples/
 
 ## Imagens
 
-- (imagens/logo.svg): logo do projeto
-- (imagens/hero-ilustracao.svg): ilustração da página inicial
-- (imagens/icone-*.svg): ícones dos cards
+- (./imagens/logo.svg): logo do projeto
+- (./imagens/hero-ilustracao.svg): ilustração da página inicial
+- (./imagens/icone-*.svg): ícones dos cards
 
 ## Contato
 
