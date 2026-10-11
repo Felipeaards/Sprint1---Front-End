@@ -1,6 +1,6 @@
 # Hub TdB - Plataforma Turma do Bem
 
-Projeto da Sprint 01 de Front-End Design Engineering (versão desktop, apenas HTML e CSS).
+Projeto da Sprint 01 de Front-End Design Engineering.
 
 ## Descrição
 
@@ -13,16 +13,13 @@ Nesta etapa existem protótipos estáticos de dois portais: **Doador** e **Volun
 
 ## Links
 
-- Repositório no GitHub: `COLOCAR O LINK AQUI`
-- Site publicado (GitHub Pages): `COLOCAR O LINK AQUI`
+- Repositório no GitHub: `https://github.com/Felipeaards/Sprint1---Front-End/tree/main`
 
 ## Tecnologias utilizadas
 
 - HTML5
 - CSS3
 - Git e GitHub
-
-(Sem JavaScript, frameworks CSS ou bibliotecas externas.)
 
 ## Estrutura de pastas
 
@@ -53,12 +50,10 @@ tdb-simples/
 
 ## Imagens
 
-- `imagens/logo.svg`: logo do projeto
-- `imagens/hero-ilustracao.svg`: ilustração da página inicial
-- `imagens/icone-*.svg`: ícones dos cards
-
-(Adicionar aqui prints das páginas antes da entrega.)
+- (imagens/logo.svg): logo do projeto
+- (imagens/hero-ilustracao.svg): ilustração da página inicial
+- (imagens/icone-*.svg): ícones dos cards
 
 ## Contato
 
-E-mail: `contato@hubtdb.exemplo.br` (trocar pelo e-mail da equipe)
+E-mail: `contato@hubtdb.exemplo.br`
