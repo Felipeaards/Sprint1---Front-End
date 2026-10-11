@@ -45,11 +45,11 @@ tdb-simples/
 
 | Foto | Nome | RM | Turma | GitHub | LinkedIn |
 |---|---|---|---|---|---|
-| ![Foto](./imagens/avatar-integrante1.svg) | Felipe Augusto Araújo Ramos da Silva | 575627 | 1TDSPT | [GitHub](https://github.com/Felipeaards) | [LinkedIn](https://www.linkedin.com/in/felipe-augusto-araújo-ramos-da-silva-bb7223278?utm_source=share_via&utm_content=profile&utm_medium=member_android) |
-| ![Foto](./imagens/avatar-integrante2.svg) | Erick Medeiros Dantas | 576627 | 1TDSPT | [GitHub](https://github.com/usuario-2) | [LinkedIn](https://www.linkedin.com/in/usuario-2) |
-| ![Foto](./imagens/avatar-integrante3.svg) | Matheus Silva Matias de Medeiros | 574918  | 1TDSPT | [GitHub](https://github.com/matheusmmedeiros21-create) | [LinkedIn]() |
-| ![Foto](./imagens/avatar-integrante4.svg) | Guilherme de Oliveira Andrade | 576432  | 1TDSPT | [GitHub](https://github.com/usuario-4) | [LinkedIn](https://www.linkedin.com/in/guilherme-oliveira-57a52342b) |
-| ![Foto](./imagens/avatar-integrante5.svg) | Erik Vasconcelos Da Silva | 575396 | 1TDSPT | [GitHub](https://github.com/Xcodebyerik) | [LinkedIn](www.linkedin.com/in/erik-vasconcelos-9bb074365) |
+| ![Foto](./imagens/Felipe.jpeg) | Felipe Augusto Araújo Ramos da Silva | 575627 | 1TDSPT | [GitHub](https://github.com/Felipeaards) | [LinkedIn](https://www.linkedin.com/in/felipe-augusto-araújo-ramos-da-silva-bb7223278?utm_source=share_via&utm_content=profile&utm_medium=member_android) |
+| ![Foto](./imagens/Dantas.jpeg) | Erick Medeiros Dantas | 576627 | 1TDSPT | [GitHub](https://github.com/erickdantaxs) | [LinkedIn](https://www.linkedin.com/in/usuario-2) |
+| ![Foto](./imagens/Matheus.jpeg) | Matheus Silva Matias de Medeiros | 574918  | 1TDSPT | [GitHub](https://github.com/matheusmmedeiros21-create) | [LinkedIn]() |
+| ![Foto](./imagens/Guilherme.jpeg) | Guilherme de Oliveira Andrade | 576432  | 1TDSPT | [GitHub](https://github.com/usuario-4) | [LinkedIn](https://www.linkedin.com/in/guilherme-oliveira-57a52342b) |
+| ![Foto](./imagens/Erik.jpeg) | Erik Vasconcelos Da Silva | 575396 | 1TDSPT | [GitHub](https://github.com/Xcodebyerik) | [LinkedIn](https://www.linkedin.com/in/erik-vasconcelos-9bb074365) |
 
 ## Imagens
 
