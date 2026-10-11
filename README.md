@@ -48,12 +48,6 @@ tdb-simples/
 | ![Foto](./imagens/Guilherme.jpeg) | Guilherme de Oliveira Andrade | 576432  | 1TDSPT | [GitHub](https://github.com/usuario-4) | [LinkedIn](https://www.linkedin.com/in/guilherme-oliveira-57a52342b) |
 | ![Foto](./imagens/Erik.jpeg) | Erik Vasconcelos Da Silva | 575396 | 1TDSPT | [GitHub](https://github.com/Xcodebyerik) | [LinkedIn](https://www.linkedin.com/in/erik-vasconcelos-9bb074365) |
 
-## Imagens
-
-- (./imagens/logo.svg): logo do projeto
-- (./imagens/hero-ilustracao.svg): ilustração da página inicial
-- (./imagens/icone-*.svg): ícones dos cards
-
 ## Contato
 
 E-mail: `contato@hubtdb.exemplo.br`
