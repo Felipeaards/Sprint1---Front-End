@@ -1,0 +1,390 @@
+/* ==========================================================
+   HUB TdB - Folha de estilos (Sprint 01 - versão desktop)
+
+   Índice:
+   1. Cores e configurações gerais
+   2. Container (largura do conteúdo)
+   3. Cabeçalho e menu
+   4. Seções e títulos
+   5. Cards
+   6. Botões
+   7. Tabelas
+   8. Formulários
+   9. FAQ
+   10. Rodapé
+   11. Media queries (desktop e telas grandes)
+   ========================================================== */
+
+
+/* ==========================================================
+   1. CORES E CONFIGURAÇÕES GERAIS
+   Para mudar a cor do site, altere só os valores abaixo.
+   ========================================================== */
+:root {
+  --cor-principal: #0f6b78;
+  --cor-escura: #0a4a54;
+  --cor-clara: #e3f4f5;
+  --cor-destaque: #f6a623;
+  --cor-texto: #222222;
+  --cor-borda: #d5dfe2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--cor-texto);
+  background-color: #f5f9fa;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--cor-escura);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--cor-principal);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+
+/* ==========================================================
+   2. CONTAINER
+   Centraliza o conteúdo. A largura muda nas media queries.
+   ========================================================== */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+/* ==========================================================
+   3. CABEÇALHO E MENU
+   ========================================================== */
+.cabecalho {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.cabecalho .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--cor-escura);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--cor-texto);
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* Link ao passar o mouse e link da página atual */
+.menu a:hover,
+.menu a.ativo {
+  color: var(--cor-escura);
+  background-color: var(--cor-clara);
+}
+
+
+/* ==========================================================
+   4. SEÇÕES E TÍTULOS
+   ========================================================== */
+section {
+  padding: 50px 0;
+}
+
+.secao-branca {
+  background-color: #ffffff;
+}
+
+.secao-clara {
+  background-color: var(--cor-clara);
+}
+
+.titulo-centro {
+  text-align: center;
+}
+
+/* Faixa de título das páginas internas */
+.topo-pagina {
+  padding: 40px 0;
+  background-color: var(--cor-clara);
+}
+
+.topo-pagina h1 {
+  margin: 0 0 10px;
+}
+
+.topo-pagina p {
+  margin: 0;
+}
+
+/* Seção principal da página inicial (texto + imagem) */
+.destaque .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.destaque h1 {
+  font-size: 40px;
+}
+
+.destaque-texto {
+  flex: 1;
+}
+
+.destaque-imagem {
+  flex: 1;
+}
+
+
+/* ==========================================================
+   5. CARDS
+   ========================================================== */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.icone {
+  width: 40px;
+  height: 40px;
+}
+
+/* Cards da página de integrantes */
+.integrante {
+  text-align: center;
+}
+
+.integrante img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.integrante h3 {
+  margin-bottom: 5px;
+}
+
+.integrante p {
+  margin: 5px 0;
+}
+
+
+/* ==========================================================
+   6. BOTÕES
+   ========================================================== */
+.botao {
+  display: inline-block;
+  padding: 10px 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid var(--cor-principal);
+  border-radius: 30px;
+}
+
+.botao-primario {
+  color: #ffffff;
+  background-color: var(--cor-principal);
+}
+
+.botao-primario:hover {
+  background-color: var(--cor-escura);
+}
+
+.botao-secundario {
+  color: var(--cor-principal);
+  background-color: transparent;
+}
+
+.botao-secundario:hover {
+  color: #ffffff;
+  background-color: var(--cor-principal);
+}
+
+
+/* ==========================================================
+   7. TABELAS
+   ========================================================== */
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.tabela caption {
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.tabela th,
+.tabela td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.tabela th {
+  background-color: var(--cor-clara);
+}
+
+
+/* ==========================================================
+   8. FORMULÁRIOS
+   ========================================================== */
+.formulario {
+  padding: 25px;
+  background-color: #ffffff;
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border: 1px solid #8a9ba1;
+  border-radius: 6px;
+}
+
+.formulario textarea {
+  height: 130px;
+}
+
+.formulario button {
+  margin-top: 20px;
+}
+
+/* Opções de escolha (radio) */
+.formulario .opcao {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: normal;
+}
+
+.formulario .opcao input {
+  width: auto;
+}
+
+
+/* 9. FAQ */
+details {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--cor-escura);
+}
+
+details p {
+  margin-bottom: 0;
+}
+
+
+/* 10. RODAPÉ */
+.rodape {
+  padding: 30px 0;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--cor-escura);
+}
+
+.rodape a {
+  color: #ffffff;
+}
+
+.rodape p {
+  margin: 5px 0;
+}
+
+
+/* 11. MEDIA QUERIES (agrupadas no final do arquivo) */
+
+/* Desktop - laptops e computadores (992px ou mais) */
+@media (min-width: 992px) {
+  .container {
+    width: 940px;
+  }
+}
+
+/* Telas grandes - desktops grandes (1300px ou mais) */
+@media (min-width: 1300px) {
+  .container {
+    width: 1200px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+}

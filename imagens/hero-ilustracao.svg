@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="440" viewBox="0 0 520 440" role="img" aria-label="Ilustração de um dente sorridente cercado de corações e crianças felizes">
+  <path d="M260 20c120 0 230 70 240 190s-90 210-230 210S20 340 20 220 140 20 260 20z" fill="#e3f4f5"/>
+  <circle cx="90" cy="90" r="26" fill="#f6a623" opacity=".25"/>
+  <circle cx="450" cy="340" r="34" fill="#e8665b" opacity=".18"/>
+  <g transform="translate(160 70) scale(1.1)">
+    <path d="M60 20c-30 0-50 22-50 52 0 24 10 36 14 60 4 24 6 70 28 70 20 0 14-52 48-52s28 52 48 52c22 0 24-46 28-70 4-24 14-36 14-60 0-30-20-52-50-52-24 0-34 10-40 10s-16-10-40-10z" fill="#ffffff" stroke="#0f6b78" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="74" cy="92" r="7" fill="#0a4a54"/>
+    <circle cx="126" cy="92" r="7" fill="#0a4a54"/>
+    <path d="M72 118c8 16 48 16 56 0" fill="none" stroke="#0a4a54" stroke-width="7" stroke-linecap="round"/>
+    <ellipse cx="58" cy="112" rx="9" ry="6" fill="#e8665b" opacity=".35"/>
+    <ellipse cx="142" cy="112" rx="9" ry="6" fill="#e8665b" opacity=".35"/>
+  </g>
+  <path d="M90 230s-26-15-26-33a15 15 0 0 1 26-10 15 15 0 0 1 26 10c0 18-26 33-26 33z" fill="#e8665b"/>
+  <path d="M440 150s-18-10-18-23a10 10 0 0 1 18-7 10 10 0 0 1 18 7c0 13-18 23-18 23z" fill="#e8665b"/>
+  <path d="M410 60l6 14 14 6-14 6-6 14-6-14-14-6 14-6z" fill="#f6a623"/>
+  <path d="M70 310l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#f6a623"/>
+  <g>
+    <circle cx="130" cy="372" r="26" fill="#f2c9a5"/>
+    <path d="M104 366c2-18 14-26 28-26s24 8 26 22c-12-8-34-10-54 4z" fill="#4b3425"/>
+    <circle cx="121" cy="374" r="3" fill="#0a4a54"/><circle cx="139" cy="374" r="3" fill="#0a4a54"/>
+    <path d="M120 383c5 6 15 6 20 0" fill="none" stroke="#0a4a54" stroke-width="3" stroke-linecap="round"/>
+    <rect x="102" y="398" width="56" height="30" rx="14" fill="#0f6b78"/>
+  </g>
+  <g>
+    <circle cx="390" cy="380" r="26" fill="#c98f63"/>
+    <path d="M364 376c0-16 12-26 26-26s26 10 26 26c-10-6-16-8-26-8s-16 2-26 8z" fill="#2b1d14"/>
+    <circle cx="381" cy="382" r="3" fill="#0a4a54"/><circle cx="399" cy="382" r="3" fill="#0a4a54"/>
+    <path d="M380 391c5 6 15 6 20 0" fill="none" stroke="#0a4a54" stroke-width="3" stroke-linecap="round"/>
+    <rect x="362" y="406" width="56" height="26" rx="13" fill="#f6a623"/>
+  </g>
+</svg>
