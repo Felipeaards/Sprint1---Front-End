@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Protótipo do Portal do Voluntário do Hub TdB.">
+    <title>Portal do Voluntário | Hub TdB</title>
+    <link rel="icon" type="image/svg+xml" href="imagens/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO (igual em todas as páginas) -->
+    <header class="cabecalho">
+        <div class="container">
+            <a class="logo" href="index.html">
+                <img src="imagens/logo.svg" alt="Logo do Hub TdB" width="48" height="48">
+                Hub TdB
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="portal-doador.html">Doador</a></li>
+                    <li><a href="portal-voluntario.html" class="ativo" aria-current="page">Voluntário</a></li>
+                    <li><a href="integrantes.html">Quem Somos</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (muda em cada página) -->
+    <main>
+        <!-- Título da página -->
+        <section class="topo-pagina">
+            <div class="container">
+                <h1>Portal do Voluntário</h1>
+                <p>Para dentistas parceiros que atendem os beneficiários da Turma do Bem.</p>
+            </div>
+        </section>
+
+        <!-- Problema -->
+        <section>
+            <div class="container">
+                <h2>O problema</h2>
+                <p>Hoje as informações dos atendimentos ficam espalhadas e são enviadas de forma manual.
+                    Isso atrasa o acompanhamento dos pacientes.</p>
+            </div>
+        </section>
+
+        <!-- Como funciona -->
+        <section class="secao-branca">
+            <div class="container">
+                <h2>Como funciona</h2>
+                <ol>
+                    <li><strong>Entrar:</strong> o dentista acessa o portal pelo celular ou computador</li>
+                    <li><strong>Ver a agenda:</strong> confere as próximas consultas e seus pacientes</li>
+                    <li><strong>Preencher o prontuário:</strong> registra o que foi feito logo após a consulta</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Protótipo (telas de exemplo com dados fictícios) -->
+        <section>
+            <div class="container">
+                <h2>Protótipo do portal</h2>
+                <p>Telas de exemplo com dados fictícios.</p>
+
+                <h3>Próximas consultas</h3>
+                <table class="tabela">
+                    <caption>Agenda da semana</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Data</th>
+                            <th scope="col">Horário</th>
+                            <th scope="col">Beneficiário</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>13/10/2026</td>
+                            <td>09:00</td>
+                            <td>Lucas M.</td>
+                            <td>Agendada</td>
+                        </tr>
+                        <tr>
+                            <td>13/10/2026</td>
+                            <td>10:30</td>
+                            <td>Pedro H.</td>
+                            <td>Agendada</td>
+                        </tr>
+                        <tr>
+                            <td>14/10/2026</td>
+                            <td>14:00</td>
+                            <td>Ana Clara S.</td>
+                            <td>A confirmar</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Prontuário digital</h3>
+                <form class="formulario" action="#" method="post">
+                    <label for="beneficiario">Nome do beneficiário</label>
+                    <input type="text" id="beneficiario" name="beneficiario" placeholder="Ex.: Lucas M.">
+
+                    <label for="diagnostico">Diagnóstico</label>
+                    <input type="text" id="diagnostico" name="diagnostico" placeholder="Ex.: cárie em molar inferior">
+
+                    <label for="procedimentos">Procedimentos realizados</label>
+                    <textarea id="procedimentos" name="procedimentos" placeholder="Descreva o que foi feito na consulta"></textarea>
+
+                    <button class="botao botao-primario" type="button">Salvar prontuário</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ (igual em todas as páginas) -->
+    <footer class="rodape">
+        <div class="container">
+            <p><strong>Hub TdB</strong> - Proposta de plataforma para a Turma do Bem</p>
+            <p>Contato: <a href="mailto:contato@hubtdb.exemplo.br">contato@hubtdb.exemplo.br</a></p>
+            <p><small>Projeto acadêmico - Front-End Design Engineering - Sprint 01</small></p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
