@@ -1,25 +1,5 @@
-/* ==========================================================
-   HUB TdB - Folha de estilos (Sprint 01 - versão desktop)
-
-   Índice:
-   1. Cores e configurações gerais
-   2. Container (largura do conteúdo)
-   3. Cabeçalho e menu
-   4. Seções e títulos
-   5. Cards
-   6. Botões
-   7. Tabelas
-   8. Formulários
-   9. FAQ
-   10. Rodapé
-   11. Media queries (desktop e telas grandes)
-   ========================================================== */
-
-
-/* ==========================================================
-   1. CORES E CONFIGURAÇÕES GERAIS
-   Para mudar a cor do site, altere só os valores abaixo.
-   ========================================================== */
+/* Hub TdB - estilos da Sprint 2
+Continuamos o CSS da Sprint 1 e adicionamos ajustes para celular e tablet. */
 :root {
   --cor-principal: #0f6b78;
   --cor-escura: #0a4a54;
@@ -29,10 +9,7 @@
   --cor-borda: #d5dfe2;
 }
 
-* {
-  box-sizing: border-box;
-}
-
+* { box-sizing: border-box; }
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -40,71 +17,60 @@ body {
   color: var(--cor-texto);
   background-color: #f5f9fa;
 }
-
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: Georgia, "Times New Roman", serif;
   color: var(--cor-escura);
 }
-
 img {
   max-width: 100%;
+  height: auto;
 }
-
 a {
   color: var(--cor-principal);
 }
-
-ul {
-  padding-left: 20px;
+button, input, select, textarea {
+  font: inherit;
 }
 
-
-/* ==========================================================
-   2. CONTAINER
-   Centraliza o conteúdo. A largura muda nas media queries.
-   ========================================================== */
 .container {
   width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-
-/* ==========================================================
-   3. CABEÇALHO E MENU
-   ========================================================== */
+/* Cabeçalho */
 .cabecalho {
-  background-color: #ffffff;
+  background: #fff;
   border-bottom: 1px solid var(--cor-borda);
 }
-
 .cabecalho .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+  gap: 20px;
 }
-
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: Georgia, serif;
+  font-family: Georgia,serif;
   font-size: 24px;
   font-weight: bold;
   color: var(--cor-escura);
   text-decoration: none;
+  white-space: nowrap;
 }
-
+.cabecalho nav {
+  margin-left: auto;
+}
 .menu {
   display: flex;
   gap: 5px;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
-
 .menu a {
   display: block;
   padding: 8px 12px;
@@ -114,122 +80,104 @@ ul {
   text-decoration: none;
   border-radius: 6px;
 }
-
-/* Link ao passar o mouse e link da página atual */
-.menu a:hover,
-.menu a.ativo {
+.menu a:hover, .menu a.ativo {
   color: var(--cor-escura);
-  background-color: var(--cor-clara);
+  background: var(--cor-clara);
+}
+.botao-menu {
+  display: none;
+  background: white;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  width: 44px;
+  height: 42px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-
-/* ==========================================================
-   4. SEÇÕES E TÍTULOS
-   ========================================================== */
+/* Seções */
 section {
   padding: 50px 0;
 }
-
 .secao-branca {
-  background-color: #ffffff;
+  background: #fff;
 }
-
 .secao-clara {
-  background-color: var(--cor-clara);
+  background: var(--cor-clara);
 }
-
 .titulo-centro {
   text-align: center;
 }
-
-/* Faixa de título das páginas internas */
 .topo-pagina {
   padding: 40px 0;
-  background-color: var(--cor-clara);
+  background: var(--cor-clara);
 }
-
 .topo-pagina h1 {
   margin: 0 0 10px;
 }
-
 .topo-pagina p {
   margin: 0;
 }
-
-/* Seção principal da página inicial (texto + imagem) */
 .destaque .container {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-
 .destaque h1 {
   font-size: 40px;
 }
-
-.destaque-texto {
+.destaque-texto, .destaque-imagem {
   flex: 1;
+  min-width: 0;
+}
+.botoes-inicio {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.destaque-imagem {
-  flex: 1;
-}
-
-
-/* ==========================================================
-   5. CARDS
-   ========================================================== */
+/* Cards */
 .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .card {
   flex: 1;
   min-width: 200px;
   padding: 20px;
-  background-color: #ffffff;
+  background: #fff;
   border: 1px solid var(--cor-borda);
   border-radius: 10px;
 }
-
 .card h3 {
   margin-top: 0;
 }
-
 .icone {
   width: 40px;
   height: 40px;
 }
-
-/* Cards da página de integrantes */
 .integrante {
   text-align: center;
 }
-
-.integrante img {
+.integrante .foto-equipe {
   width: 150px;
   height: 150px;
+  object-fit: cover;
   border-radius: 50%;
+  background: var(--cor-clara);
 }
-
 .integrante h3 {
   margin-bottom: 5px;
 }
-
 .integrante p {
   margin: 5px 0;
 }
 
-
-/* ==========================================================
-   6. BOTÕES
-   ========================================================== */
+/* Botões */
 .botao {
   display: inline-block;
   padding: 10px 22px;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -237,154 +185,240 @@ section {
   border: 2px solid var(--cor-principal);
   border-radius: 30px;
 }
-
 .botao-primario {
-  color: #ffffff;
-  background-color: var(--cor-principal);
+  color: #fff;
+  background: var(--cor-principal);
 }
-
 .botao-primario:hover {
-  background-color: var(--cor-escura);
+  background: var(--cor-escura);
 }
-
 .botao-secundario {
   color: var(--cor-principal);
-  background-color: transparent;
+  background: transparent;
 }
-
 .botao-secundario:hover {
-  color: #ffffff;
-  background-color: var(--cor-principal);
+  color: #fff;
+  background: var(--cor-principal);
 }
 
-
-/* ==========================================================
-   7. TABELAS
-   ========================================================== */
+/* Tabelas */
+.tabela-rolagem {
+  max-width: 100%;
+  overflow-x: auto;
+}
 .tabela {
   width: 100%;
+  min-width: 530px;
   border-collapse: collapse;
-  background-color: #ffffff;
+  background: #fff;
 }
-
 .tabela caption {
   padding-bottom: 10px;
   font-weight: bold;
   text-align: left;
 }
-
-.tabela th,
-.tabela td {
+.tabela th, .tabela td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid var(--cor-borda);
 }
-
 .tabela th {
-  background-color: var(--cor-clara);
+  background: var(--cor-clara);
+}
+.tabela progress {
+  max-width: 120px;
+  width: 45%;
+  vertical-align: middle;
+}
+.filtro-pacientes {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+.filtro-pacientes select {
+  padding: 8px;
+  border: 1px solid #8a9ba1;
+  border-radius: 6px;
+}
+.aviso-exemplo {
+  color: #555;
+  font-size: 15px;
 }
 
-
-/* ==========================================================
-   8. FORMULÁRIOS
-   ========================================================== */
+/* Formulários */
 .formulario {
+  max-width: 800px;
   padding: 25px;
-  background-color: #ffffff;
+  background: #fff;
   border: 1px solid var(--cor-borda);
   border-radius: 10px;
 }
-
 .formulario label {
   display: block;
   margin-top: 15px;
   font-weight: bold;
 }
-
-.formulario input,
-.formulario select,
-.formulario textarea {
+.formulario input, .formulario select, .formulario textarea {
   width: 100%;
   padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
   border: 1px solid #8a9ba1;
   border-radius: 6px;
 }
-
 .formulario textarea {
   height: 130px;
+  resize: vertical;
 }
-
 .formulario button {
   margin-top: 20px;
 }
-
-/* Opções de escolha (radio) */
+.formulario fieldset {
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+}
 .formulario .opcao {
   display: inline-block;
   margin-right: 20px;
   font-weight: normal;
 }
-
 .formulario .opcao input {
   width: auto;
 }
+.formulario .erro {
+  display: block;
+  min-height: 20px;
+  font-size: 13px;
+  color: #a52929;
+}
+.formulario .campo-erro {
+  border: 2px solid #b52a2a;
+}
+.mensagem-formulario {
+  font-weight: bold;
+  color: var(--cor-escura);
+  margin-top: 15px;
+}
 
-
-/* 9. FAQ */
+/* FAQ */
 details {
   margin-bottom: 10px;
   padding: 15px;
-  background-color: #ffffff;
+  background: #fff;
   border: 1px solid var(--cor-borda);
   border-radius: 8px;
 }
-
 summary {
   font-weight: bold;
   cursor: pointer;
   color: var(--cor-escura);
 }
-
 details p {
   margin-bottom: 0;
 }
 
-
-/* 10. RODAPÉ */
+/* Rodapé */
 .rodape {
   padding: 30px 0;
   text-align: center;
-  color: #ffffff;
-  background-color: var(--cor-escura);
+  color: #fff;
+  background: var(--cor-escura);
 }
-
 .rodape a {
-  color: #ffffff;
+  color: #fff;
 }
-
 .rodape p {
   margin: 5px 0;
 }
 
-
-/* 11. MEDIA QUERIES (agrupadas no final do arquivo) */
-
-/* Desktop - laptops e computadores (992px ou mais) */
-@media (min-width: 992px) {
-  .container {
-    width: 940px;
+/* Tablets e celulares: menu e colunas */
+@media (max-width: 991px) {
+  .cabecalho .container {
+    flex-wrap: wrap;
+  }
+  .botao-menu {
+    display: block;
+    margin-left: auto;
+  }
+  .cabecalho nav {
+    display: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .cabecalho nav.aberto {
+    display: block;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 0;
+    padding-top: 8px;
+    border-top: 1px solid var(--cor-borda);
+  }
+  .menu a {
+    padding: 11px 12px;
+  }
+  .cards-equipe .card {
+    flex-basis: 45%;
+    min-width: 0;
+  }
+  .destaque h1 {
+    font-size: 34px;
+  }
+  .destaque .container {
+    gap: 20px;
   }
 }
 
-/* Telas grandes - desktops grandes (1300px ou mais) */
-@media (min-width: 1300px) {
+/* Celulares */
+@media (max-width: 600px) {
   .container {
-    width: 1200px;
+    width: 92%;
   }
-
-  body {
-    font-size: 18px;
+  section {
+    padding: 32px 0;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .destaque .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .destaque h1 {
+    font-size: 32px;
+  }
+  .destaque-imagem {
+    text-align: center;
+  }
+  .destaque-imagem img {
+    max-height: 260px;
+  }
+  .card, .cards-equipe .card {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+  .topo-pagina {
+    padding: 30px 0;
+  }
+  .formulario {
+    padding: 16px;
+  }
+  .filtro-pacientes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .botoes-inicio .botao {
+    width: 100%;
+    text-align: center;
+  }
+  .logo {
+    font-size: 21px;
+  }
+  .logo img {
+    width: 42px;
+    height: 42px;
   }
 }
